@@ -1,4 +1,5 @@
 import requests
+import os
 import logging
 class Sink(object):
     def __init__(self, site, *args, **kwargs):
