@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='scrapy-sink',
-    version='0.1.0',
+    version='0.1.1',
     url='https://github.com/etng/scrapy-sink',
     description='Pipeline to post scrapy item to your url',
     long_description=open('README.md').read() + "\n\n" + open("CHANGES.md").read(),
