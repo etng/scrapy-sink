@@ -3,7 +3,7 @@ import os
 import logging
 class Sink(object):
     def __init__(self, site, *args, **kwargs):
-        self.sink_addr =  os.environ.get("SINK_ADDR", "")
+        self.sink_addr = kwargs.get('sink_addr', os.environ.get("SINK_ADDR", ""))
         self.site = site
         self.data_model = kwargs.get('data_model', '')
         self.logger = logging.getLogger(__class__.__name__)
